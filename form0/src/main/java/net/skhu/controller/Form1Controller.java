@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import net.skhu.model.Data;
+
 @Controller
 public class Form1Controller {
 
@@ -29,4 +31,32 @@ public class Form1Controller {
         System.out.printf("제목: %s. 색: %d\n", title, color);
         return "edit1";
     }
+
+    // edit2
+    @RequestMapping(value="/form1/edit2", method=RequestMethod.GET)
+    public String edit2(Model model) {
+        model.addAttribute("data", new Data());
+        return "edit2";
+    }
+
+    @RequestMapping(value="/form1/edit2", method=RequestMethod.POST)
+    public String edit2(Model model, Data data) {
+        System.out.printf("제목: %s. 색: %d\n", data.getTitle(), data.getColor());
+        return "edit2";
+    }
+
+    // edit3
+    @RequestMapping(value="/form1/edit3", method=RequestMethod.GET)
+    public String edit3(Model model) {
+        model.addAttribute("data", new Data());
+        return "edit3";
+    }
+
+    @RequestMapping(value="/form1/edit3", method=RequestMethod.POST)
+    public String edit3(Model model, Data data) {
+        System.out.printf("제목: %s. 색: %d\n", data.getTitle(), data.getColor());
+        return "edit3";
+    }
+
 }
+
