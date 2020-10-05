@@ -18,7 +18,7 @@ public interface DepartmentMapper {
     List<Department> findAll();
 
     @Select("SELECT * FROM department WHERE id = #{id}")
-    Department findOne(int id);
+    Department findOne(Integer id);
 
     @Insert("INSERT department (departmentName) VALUES (#{departmentName})")
     @Options(useGeneratedKeys=true, keyProperty="id")
@@ -28,6 +28,6 @@ public interface DepartmentMapper {
     void update(Department department);
 
     @Delete("DELETE FROM department WHERE id = #{id}")
-    void delete(int id);
+    void delete(Integer id);
 }
 
