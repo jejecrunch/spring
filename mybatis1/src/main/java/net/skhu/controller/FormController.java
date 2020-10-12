@@ -33,7 +33,7 @@ public class FormController {
     public String edit2(Model model) {
         model.addAttribute("student", new Student());
         model.addAttribute("departments", departmentMapper.findAll());
-        return "form/edit1";
+        return "form/edit2";
     }
 
     @PostMapping("edit2")
@@ -41,11 +41,11 @@ public class FormController {
         // TODO: DB 저장 기능을 구현해야 함.
         model.addAttribute("message", "저장했습니다.");
         model.addAttribute("departments", departmentMapper.findAll());
-        return "form/edit1";
+        return "form/edit2";
     }
 
     @GetMapping("edit3")
-    public String edit3(Model model, int id) {
+    public String edit3(Model model) {
         model.addAttribute("student", new Student());
         model.addAttribute("departments", departmentMapper.findAll());
         return "form/edit3";

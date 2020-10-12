@@ -28,6 +28,6 @@ public interface DepartmentMapper {
     void update(Department department);
 
     @Delete("DELETE FROM department WHERE id = #{id}")
-    void delete(Integer id);
+    void delete(int id);
 }
 
