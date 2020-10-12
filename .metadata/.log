@@ -10707,3 +10707,183 @@ java.lang.NullPointerException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:00:56.268
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OiIIGyow => OK
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-10-12 11:02:58.413
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:105)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:04.399
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EqNEPEdc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:04.977
+!MESSAGE subscribing to classpath changes: sts4.classpath.EqNEPEdc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:04.998
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.005
+!MESSAGE subsribers = [sts4.classpath.EqNEPEdc]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.018
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.030
+!MESSAGE project mybatis1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.037
+!MESSAGE Preparing classpath changed notification mybatis1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.050
+!MESSAGE project A201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.062
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.069
+!MESSAGE project form0 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.086
+!MESSAGE project hello1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.111
+!MESSAGE classpath=91 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.119
+!MESSAGE project hello2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.135
+!MESSAGE executing callback sts4.classpath.EqNEPEdc mybatis1 false 91
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.154
+!MESSAGE project hello2 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.191
+!MESSAGE project param ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.211
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.220
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.EqNEPEdc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.444
+!MESSAGE executing callback sts4.classpath.EqNEPEdc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.511
+!MESSAGE Preparing classpath changed notification param
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.546
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.615
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:05.656
+!MESSAGE executing callback sts4.classpath.EqNEPEdc param false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.003
+!MESSAGE executing callback sts4.classpath.EqNEPEdc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.054
+!MESSAGE Preparing classpath changed notification hello1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.085
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.169
+!MESSAGE classpath=82 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.246
+!MESSAGE executing callback sts4.classpath.EqNEPEdc hello1 false 82
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.306
+!MESSAGE executing callback sts4.classpath.EqNEPEdc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.370
+!MESSAGE Preparing classpath changed notification form0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.409
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.553
+!MESSAGE classpath=82 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.632
+!MESSAGE executing callback sts4.classpath.EqNEPEdc form0 false 82
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:06.973
+!MESSAGE executing callback sts4.classpath.EqNEPEdc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:07.012
+!MESSAGE Preparing classpath changed notification A201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:07.037
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:07.072
+!MESSAGE classpath=82 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:07.092
+!MESSAGE executing callback sts4.classpath.EqNEPEdc A201632035 false 82
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:04:07.310
+!MESSAGE executing callback sts4.classpath.EqNEPEdc SUCCESS [done]
+
+!ENTRY org.eclipse.wst.sse.core 4 4 2020-10-12 11:07:00.302
+!MESSAGE can not get a buffer without a document reference
+!STACK 0
+java.lang.IllegalArgumentException: can not get a buffer without a document reference
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getBuffer(FileBufferModelManager.java:689)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.getModelPath(JSPTranslator.java:3274)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.writeExternal(JSPTranslator.java:3381)
+	at java.io.ObjectOutputStream.writeExternalData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslator(JSPTranslatorPersister.java:263)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslation(JSPTranslatorPersister.java:147)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager.performAction(JSPIndexManager.java:137)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob$1.run(AbstractIndexManager.java:1559)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1557)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.sse.core 4 4 2020-10-12 11:08:19.803
+!MESSAGE can not get a buffer without a document reference
+!STACK 0
+java.lang.IllegalArgumentException: can not get a buffer without a document reference
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getBuffer(FileBufferModelManager.java:689)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.getModelPath(JSPTranslator.java:3274)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.writeExternal(JSPTranslator.java:3381)
+	at java.io.ObjectOutputStream.writeExternalData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslator(JSPTranslatorPersister.java:263)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslation(JSPTranslatorPersister.java:147)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager.performAction(JSPIndexManager.java:137)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob$1.run(AbstractIndexManager.java:1559)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1557)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:10:01.445
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EqNEPEdc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:10:01.925
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.EqNEPEdc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:10:01.945
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-12 11:10:01.962
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EqNEPEdc => OK
