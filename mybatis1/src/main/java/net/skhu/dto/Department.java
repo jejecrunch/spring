@@ -1,6 +1,10 @@
 package net.skhu.dto;
 
-public class Department {
+import java.io.Serializable;
+
+public class Department implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     int id;
     String departmentName;
 
@@ -20,3 +24,4 @@ public class Department {
         this.departmentName = departmentName;
     }
 }
+
