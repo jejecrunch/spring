@@ -5,6 +5,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="/common.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/common.js"></script>
   <style>
     a.btn { float: right; margin: -20px 0 5px 0; }
     td:nth-child(1) { text-align: center; }
@@ -19,15 +21,13 @@
       <tr>
         <th>id</th>
         <th>학과명</th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
       <c:forEach var="department" items="${ departments }">
-        <tr>
+        <tr data-url="edit?id=${ department.id }">
           <td>${ department.id }</td>
-          <td><a href="edit?id=${ department.id }">${ department.departmentName }</a></td>
-          <td><a href="delete?id=${ department.id }">삭제</a></td>
+          <td>${ department.departmentName }</td>
         </tr>
       </c:forEach>
     </tbody>
