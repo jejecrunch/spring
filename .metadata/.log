@@ -5652,3 +5652,1189 @@ java.lang.IllegalArgumentException: can not get a buffer without a document refe
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-14 14:21:35.484
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JZAtTXxV => OK
+!SESSION 2021-01-17 23:48:17.922 -----------------------------------------------
+eclipse.buildId=4.1.2.201902210640-RELEASE
+java.version=11.0.9.1
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data D:\1_university\github\spring -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-01-17 23:48:38.230
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-01-17 23:48:38.230
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@289cf7db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c523bdd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-01-17 23:49:02.183
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\de1et'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.osgi 2 0 2021-01-17 23:49:08.484
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-1: Update dynamic Java sources working sets,5,main]" timed out waiting (5040ms) for thread "Thread[Worker-3: Initializing Java Tooling,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.10.0.20181127-2120 [353]". To avoid deadlock, thread "Thread[Worker-1: Update dynamic Java sources working sets,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.10.0.20181127-2120"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=353] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:344)
+	at org.eclipse.osgi.container.Module.start(Module.java:408)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3708)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3684)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3661)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3156)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3320)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2397)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2273)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:341)
+	... 39 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:341)
+	at org.eclipse.osgi.container.Module.start(Module.java:408)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3708)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3684)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3661)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3156)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3320)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2397)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2273)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2021-01-18 00:09:58.775
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/releases/2018-12/201812191000/content.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:431)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:135)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:177)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:520)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:451)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:378)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:102)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:158)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:405)
+	... 22 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2021-01-18 00:09:58.777
+!MESSAGE Unable to read repository at https://download.eclipse.org/releases/2018-12/201812191000/content.xml.xz.
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:177)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:520)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:451)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:378)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:102)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:158)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:405)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:135)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+!SUBENTRY 2 unknown 8 1 2021-01-18 00:09:58.778
+!MESSAGE 
+
+!ENTRY org.eclipse.epp.mpc.ui 1 2 2021-01-18 00:09:58.918
+!MESSAGE Skipping update check for repository 'https://download.eclipse.org/releases/2018-12' - failed to read repository. Affected entries: 
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/releases/2018-12.
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:187)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/releases/2018-12/201812191000/content.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:431)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:135)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	... 13 more
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:177)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:520)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:451)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:378)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:102)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:158)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:405)
+	... 22 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2021-01-18 00:09:58.918
+!MESSAGE Unable to read repository at https://download.eclipse.org/releases/2018-12.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/releases/2018-12/201812191000/content.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:431)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:135)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:177)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:520)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:451)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:378)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:102)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:158)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:405)
+	... 22 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2021-01-18 00:09:58.919
+!MESSAGE Unable to read repository at https://download.eclipse.org/releases/2018-12/201812191000/content.xml.xz.
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:177)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:520)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:451)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:378)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:102)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:158)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:405)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:135)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$11(MarketplaceCatalog.java:326)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+!SUBENTRY 3 unknown 8 1 2021-01-18 00:09:58.921
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.epp.mpc.ui 1 0 2021-01-18 00:09:58.921
+!MESSAGE Eclipse Web Developer Tools 3.12
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2021-01-18 00:35:28.940
+!MESSAGE Performing Marketplace install request from http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=25025
+!SESSION 2021-01-18 00:36:47.322 -----------------------------------------------
+eclipse.buildId=4.1.2.201902210640-RELEASE
+java.version=11.0.9.1
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-01-18 00:37:11.150
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-01-18 00:37:11.150
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b409174,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11939a9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-01-18 00:37:45.492
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\de1et'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.osgi 2 0 2021-01-18 00:37:52.140
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-1: Update dynamic Java sources working sets,5,main]" timed out waiting (5532ms) for thread "Thread[Worker-5: Initializing Java Tooling,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.10.0.20181127-2120 [353]". To avoid deadlock, thread "Thread[Worker-1: Update dynamic Java sources working sets,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.10.0.20181127-2120"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=353] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:344)
+	at org.eclipse.osgi.container.Module.start(Module.java:408)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3708)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3684)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3661)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3156)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3320)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2397)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2273)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:341)
+	... 39 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:341)
+	at org.eclipse.osgi.container.Module.start(Module.java:408)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3708)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3684)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3661)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3156)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3320)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2397)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2273)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-01-18 01:10:46.290 -----------------------------------------------
+eclipse.buildId=4.1.2.201902210640-RELEASE
+java.version=11.0.9.1
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-01-18 01:11:00.178
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-01-18 01:11:00.178
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@110318a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42ac309,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-01-18 01:11:20.386
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\de1et'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.osgi 2 0 2021-01-18 01:11:26.670
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-1: Update dynamic Java sources working sets,5,main]" timed out waiting (5078ms) for thread "Thread[Worker-5: Initializing Java Tooling,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.10.0.20181127-2120 [353]". To avoid deadlock, thread "Thread[Worker-1: Update dynamic Java sources working sets,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.10.0.20181127-2120"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=353] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:344)
+	at org.eclipse.osgi.container.Module.start(Module.java:408)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3708)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3684)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3661)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3156)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3320)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2397)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2273)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:341)
+	... 39 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:341)
+	at org.eclipse.osgi.container.Module.start(Module.java:408)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3708)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3684)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3661)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3156)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3320)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2397)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2273)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2021-01-18 01:14:20.110
+!MESSAGE Performing Marketplace install request from http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=25025
+!SESSION 2021-01-18 01:27:55.891 -----------------------------------------------
+eclipse.buildId=4.1.2.201902210640-RELEASE
+java.version=11.0.9.1
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data file:/D:/1_university/github/spring/ -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-01-18 01:28:13.668
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-01-18 01:28:13.668
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2053b761,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34588991,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-01-18 01:28:29.606
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\de1et'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:49.035
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:49.167
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@173fff9d[org.springframework.tooling.boot.ls:1.4.0.201902210636(id=620)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:49.183
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:49.307
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-01-18 01:36:56.426
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:115)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-01-18 01:36:58.503
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.operations.documentLink.DocumentLinkDetector.detectHyperlinks(DocumentLinkDetector.java:115)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.579
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VDEJpuxw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.623
+!MESSAGE subscribing to classpath changes: sts4.classpath.VDEJpuxw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.639
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.655
+!MESSAGE subsribers = [sts4.classpath.VDEJpuxw]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.668
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.684
+!MESSAGE project form4 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.698
+!MESSAGE project 201214-add ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.711
+!MESSAGE Preparing classpath changed notification form4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.725
+!MESSAGE project A201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.737
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.751
+!MESSAGE project B201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.766
+!MESSAGE project D201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.780
+!MESSAGE classpath=101 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.795
+!MESSAGE project E201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.806
+!MESSAGE executing callback sts4.classpath.VDEJpuxw form4 false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.817
+!MESSAGE project H201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.832
+!MESSAGE project J201632035 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.896
+!MESSAGE project form0 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.912
+!MESSAGE project form1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:36:59.926
+!MESSAGE project form2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.432
+!MESSAGE project form3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.442
+!MESSAGE project hello1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.453
+!MESSAGE project hello2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.466
+!MESSAGE project hello2 SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.479
+!MESSAGE project jpa1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.639
+!MESSAGE project jpa2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.654
+!MESSAGE project jpa3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.676
+!MESSAGE project jpa4 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.688
+!MESSAGE project jpa5 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.700
+!MESSAGE project mybatis1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.713
+!MESSAGE project orderby1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.729
+!MESSAGE project orderby2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.741
+!MESSAGE project param ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.753
+!MESSAGE project resultmap1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.767
+!MESSAGE project resultmap2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.780
+!MESSAGE project resultmap3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.794
+!MESSAGE project resultmap4 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.808
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.820
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VDEJpuxw => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.840
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.853
+!MESSAGE Preparing classpath changed notification resultmap4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.866
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.914
+!MESSAGE classpath=85 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:00.928
+!MESSAGE executing callback sts4.classpath.VDEJpuxw resultmap4 false 85
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.119
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.305
+!MESSAGE Preparing classpath changed notification resultmap3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.320
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.350
+!MESSAGE classpath=85 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.363
+!MESSAGE executing callback sts4.classpath.VDEJpuxw resultmap3 false 85
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.412
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.425
+!MESSAGE Preparing classpath changed notification resultmap2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.438
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.467
+!MESSAGE classpath=85 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.480
+!MESSAGE executing callback sts4.classpath.VDEJpuxw resultmap2 false 85
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.566
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.578
+!MESSAGE Preparing classpath changed notification resultmap1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.590
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.615
+!MESSAGE classpath=84 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.627
+!MESSAGE executing callback sts4.classpath.VDEJpuxw resultmap1 false 84
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.668
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.681
+!MESSAGE Preparing classpath changed notification param
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.695
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.858
+!MESSAGE classpath=71 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:01.875
+!MESSAGE executing callback sts4.classpath.VDEJpuxw param false 71
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.286
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.509
+!MESSAGE Preparing classpath changed notification orderby2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.624
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.652
+!MESSAGE classpath=85 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.665
+!MESSAGE executing callback sts4.classpath.VDEJpuxw orderby2 false 85
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.813
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.826
+!MESSAGE Preparing classpath changed notification orderby1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.839
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.865
+!MESSAGE classpath=85 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:02.878
+!MESSAGE executing callback sts4.classpath.VDEJpuxw orderby1 false 85
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:03.831
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:04.170
+!MESSAGE Preparing classpath changed notification mybatis1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:04.183
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:04.226
+!MESSAGE classpath=74 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:04.239
+!MESSAGE executing callback sts4.classpath.VDEJpuxw mybatis1 false 74
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.226
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.277
+!MESSAGE Preparing classpath changed notification jpa5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.290
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.321
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.336
+!MESSAGE executing callback sts4.classpath.VDEJpuxw jpa5 false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.454
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.467
+!MESSAGE Preparing classpath changed notification jpa4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.482
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.526
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:05.541
+!MESSAGE executing callback sts4.classpath.VDEJpuxw jpa4 false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.280
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.306
+!MESSAGE Preparing classpath changed notification jpa3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.319
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.350
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.368
+!MESSAGE executing callback sts4.classpath.VDEJpuxw jpa3 false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.423
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.437
+!MESSAGE Preparing classpath changed notification jpa2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.450
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.485
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.499
+!MESSAGE executing callback sts4.classpath.VDEJpuxw jpa2 false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.560
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.574
+!MESSAGE Preparing classpath changed notification jpa1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.588
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.620
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.633
+!MESSAGE executing callback sts4.classpath.VDEJpuxw jpa1 false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.674
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.690
+!MESSAGE Preparing classpath changed notification hello1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.703
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.726
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:06.739
+!MESSAGE executing callback sts4.classpath.VDEJpuxw hello1 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:07.697
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.510
+!MESSAGE Preparing classpath changed notification form3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.529
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.562
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.578
+!MESSAGE executing callback sts4.classpath.VDEJpuxw form3 false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.621
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.637
+!MESSAGE Preparing classpath changed notification form2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.653
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.699
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:08.960
+!MESSAGE executing callback sts4.classpath.VDEJpuxw form2 false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.382
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.414
+!MESSAGE Preparing classpath changed notification form1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.433
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.476
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.496
+!MESSAGE executing callback sts4.classpath.VDEJpuxw form1 false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.547
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.665
+!MESSAGE Preparing classpath changed notification form0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.679
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.733
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:09.749
+!MESSAGE executing callback sts4.classpath.VDEJpuxw form0 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.019
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.083
+!MESSAGE Preparing classpath changed notification J201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.101
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.149
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.165
+!MESSAGE executing callback sts4.classpath.VDEJpuxw J201632035 false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.517
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.783
+!MESSAGE Preparing classpath changed notification H201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:10.824
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:11.255
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:11.492
+!MESSAGE executing callback sts4.classpath.VDEJpuxw H201632035 false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:12.567
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:12.780
+!MESSAGE Preparing classpath changed notification E201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:12.796
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:12.826
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:12.838
+!MESSAGE executing callback sts4.classpath.VDEJpuxw E201632035 false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.428
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.448
+!MESSAGE Preparing classpath changed notification D201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.467
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.587
+!MESSAGE classpath=85 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.600
+!MESSAGE executing callback sts4.classpath.VDEJpuxw D201632035 false 85
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.647
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.663
+!MESSAGE Preparing classpath changed notification B201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.676
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.705
+!MESSAGE classpath=80 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.718
+!MESSAGE executing callback sts4.classpath.VDEJpuxw B201632035 false 80
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:13.925
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.016
+!MESSAGE Preparing classpath changed notification A201632035
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.029
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.067
+!MESSAGE classpath=65 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.081
+!MESSAGE executing callback sts4.classpath.VDEJpuxw A201632035 false 65
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.590
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.696
+!MESSAGE Preparing classpath changed notification 201214-add
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.709
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.739
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:14.753
+!MESSAGE executing callback sts4.classpath.VDEJpuxw 201214-add false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-18 01:37:15.191
+!MESSAGE executing callback sts4.classpath.VDEJpuxw SUCCESS [done]

@@ -32,7 +32,7 @@ public class UserController {
     public String register(Model model,
             @Valid UserRegistration userRegistration, BindingResult bindingResult)
     {
-        if (bindingResult.hasErrors()) {
+        if (userService.hasErrors(userRegistration, bindingResult)) {
             model.addAttribute("departments", departmentService.findAll());
             return "user/register";
         }

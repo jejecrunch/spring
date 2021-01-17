@@ -6,5 +6,7 @@ import net.skhu.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>  {
 
+    User findByUserid(String userid);
+
 }
 
