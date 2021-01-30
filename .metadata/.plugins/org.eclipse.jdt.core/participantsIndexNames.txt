@@ -83,6 +83,8 @@ D:\1_university\github\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \hello2\src\main\java
 D:\1_university\github\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1570961327.index
 \mybatis1\src\main\java
+D:\1_university\github\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\250409966.index
+\page3\src\main\java
 D:\1_university\github\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1014212367.index
 \form3\src\main\java
 D:\1_university\github\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4247128689.index

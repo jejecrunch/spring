@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+       "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.skhu.mapper.StudentMapper">
+
+  <select id="findAll" resultType="net.skhu.dto.Student">
+    <bind name="start" value="(pg - 1) * sz" />
+    SELECT s.*, d.name departmentName 
+    FROM student s LEFT JOIN department d ON s.departmentId = d.id
+    ORDER BY s.id
+    LIMIT #{start}, #{sz}
+  </select>
+  
+  <update id="update">
+    UPDATE student SET
+      studentNo = #{studentNo},
+      name = #{name},
+      departmentId = #{departmentId},
+      sex = #{sex},
+      phone = #{phone},
+      email = #{email}
+    WHERE id = #{id}      
+  </update> 
+  
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+    INSERT student (studentNo, name, departmentId, sex, phone, email)
+    VALUES (#{studentNo}, #{name}, #{departmentId}, #{sex}, #{phone}, #{email})
+  </insert>
+  
+</mapper>
+
