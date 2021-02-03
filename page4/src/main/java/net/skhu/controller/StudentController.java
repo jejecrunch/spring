@@ -25,7 +25,7 @@ public class StudentController {
     @RequestMapping("list")
     public String list(Model model, Pagination pagination) {
         List<Student> students = studentMapper.findByDepartmentId(pagination);
-        pagination.setRecordCount(studentMapper.count());
+        pagination.setRecordCount(studentMapper.count(pagination));
         model.addAttribute("students", students);
         model.addAttribute("departments", departmentMapper.findAll());
         return "student/list";

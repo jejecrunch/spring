@@ -15,8 +15,8 @@ public interface StudentMapper {
     List<Student> findAll(Pagination pagination);
     List<Student> findByDepartmentId(Pagination pagination);
 
-    @Select("SELECT COUNT(id) FROM student")
-    int count();
+    @Select("SELECT COUNT(id) FROM student WHERE #{di} = 0 OR #{di} = departmentId")
+    int count(Pagination pagination);
 
     @Select("SELECT * FROM student WHERE id = #{id}")
     Student findById(int id);
