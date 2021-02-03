@@ -42,7 +42,7 @@ public class StudentController {
     public String create(Model model, Student student, Pagination pagination) {
         studentMapper.insert(student);
         pagination.setDi(0);
-        int lastPage = (int)Math.ceil((double)studentMapper.count() / pagination.getSz());
+        int lastPage = (int)Math.ceil((double)studentMapper.count(pagination) / pagination.getSz());
         pagination.setPg(lastPage);
         return "redirect:list?" + pagination.getQueryString();
     }

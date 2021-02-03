@@ -16619,3 +16619,8 @@ java.io.FileNotFoundException: C:\Users\de1et\.m2\repository\org\hibernate\valid
 2021-02-03 20:31:43,062 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2021-02-03 20:31:43,066 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-03 20:31:43,067 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\1_university\github\spring\page4\src\test\resources
+2021-02-03 20:33:51,815 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-03 20:33:51,816 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-03 20:33:51,830 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-02-03 20:33:51,834 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-03 20:33:51,834 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\1_university\github\spring\page4\src\test\resources
